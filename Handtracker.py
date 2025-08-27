@@ -25,7 +25,7 @@ def fingers_up(hand_landmarks):
     else:
         finger_states.append(0)     # down
     
-    tips = [8, 12, 16, 20]
+    tips = [8, 12, 16, 20]  
     for tip in tips:
         if hand_landmarks[tip].y < hand_landmarks[tip - 2].y:
             finger_states.append(1)
